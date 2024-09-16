@@ -1,0 +1,53 @@
+body {
+  font-family: Mazzard, sans-serif !important;
+  background-color: #151517;
+  margin: 0;
+  padding: 16px 0 16px 16px;
+}
+
+.container {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chartInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.chartInfoPrice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.chartInfoPrice p {
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  margin: 0;
+}
+
+.chartInfoPrice span {
+  color: #fc5454;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.chartInfoVolume {
+  font-size: 14px;
+  line-height: 20px;
+  color: #aaaab2;
+}
