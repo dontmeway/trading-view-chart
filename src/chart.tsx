@@ -9,7 +9,11 @@ import {
 import dayjs from 'dayjs'
 
 type Props = {
-  data: any[]
+  data: {
+    time: string
+    value: number
+    valuation: number
+  }[]
   colors?: {
     backgroundColor?: string
     lineColor?: string
@@ -17,6 +21,7 @@ type Props = {
     areaTopColor?: string
     areaBottomColor?: string
   }
+  lang: 'ru' | 'en'
 }
 
 const toolTipWidth = 100
@@ -53,8 +58,16 @@ export const Chart = (props: Props) => {
     price: 0,
     valuation: 0,
   })
-  const first = data[0]
-  const last = data[data.length - 1]
+  const first = data[0] ?? {
+    value: 0,
+    valuation: 0,
+    time: '',
+  }
+  const last = data[data.length - 1] ?? {
+    value: 0,
+    valuation: 0,
+    time: '',
+  }
 
   const chartContainerRef = useRef<HTMLDivElement>(null)
 
@@ -94,7 +107,10 @@ export const Chart = (props: Props) => {
         },
       },
       localization: {
-        locale: 'ru-RU',
+        locale: props.lang === 'ru' ? 'ru-RU' : 'en-US',
+        priceFormatter: (price: number) => {
+          return price.toFixed(0)
+        },
       },
       timeScale: {
         borderColor: 'rgba(255, 255, 255, 0.15)',
@@ -203,6 +219,7 @@ export const Chart = (props: Props) => {
     textColor,
     areaTopColor,
     areaBottomColor,
+    props.lang,
   ])
 
   return (
@@ -228,7 +245,7 @@ export const Chart = (props: Props) => {
             %)
           </span>
         </div>
-        <span className="chartInfoVolume">${last.valuation} млрд</span>
+        <span className="chartInfoVolume">${last.valuation}</span>
       </div>
       <div className="chartContainer" ref={chartContainerRef} />
 

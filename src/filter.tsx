@@ -3,30 +3,36 @@ export type FilterType = '3m' | '6m' | '1y' | 'max'
 type Props = {
   value: FilterType
   onChange: (value: FilterType) => void
+  lang: 'ru' | 'en'
 }
 
-const filters: {
-  value: FilterType
-  label: string
-}[] = [
-  { value: '3m', label: '3M' },
-  { value: '6m', label: '6M' },
-  { value: '1y', label: '1Y' },
-  { value: 'max', label: 'Max' },
-]
+const langs: Record<'ru' | 'en', Record<FilterType, string>> = {
+  en: {
+    '1y': '1Y',
+    '3m': '3M',
+    '6m': '6M',
+    max: 'Max',
+  },
+  ru: {
+    '1y': '1Г',
+    '3m': '3М',
+    '6m': '6М',
+    max: 'Макс',
+  },
+}
+
+const filters: FilterType[] = ['3m', '6m', '1y', 'max']
 
 export const Filter = (props: Props) => {
   return (
     <div className="filter">
       {filters.map((filter) => (
         <button
-          key={filter.value}
-          className={
-            (props.value === filter.value ? 'active ' : '') + 'filterButton'
-          }
-          onClick={() => props.onChange(filter.value)}
+          key={filter}
+          className={(props.value === filter ? 'active ' : '') + 'filterButton'}
+          onClick={() => props.onChange(filter)}
         >
-          {filter.label}
+          {langs[props.lang][filter]}
         </button>
       ))}
     </div>
