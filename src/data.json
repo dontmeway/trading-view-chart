@@ -1,0 +1,1367 @@
+[
+  {
+    "id": 9860,
+    "product_id": 48,
+    "date": "2021-01-05",
+    "price_per_share": 90.68,
+    "valuation": 0.84
+  },
+  {
+    "id": 9861,
+    "product_id": 48,
+    "date": "2021-01-12",
+    "price_per_share": 93.9,
+    "valuation": 0.87
+  },
+  {
+    "id": 9862,
+    "product_id": 48,
+    "date": "2021-01-19",
+    "price_per_share": 95.63,
+    "valuation": 0.89
+  },
+  {
+    "id": 9863,
+    "product_id": 48,
+    "date": "2021-01-26",
+    "price_per_share": 93.06,
+    "valuation": 0.87
+  },
+  {
+    "id": 9864,
+    "product_id": 48,
+    "date": "2021-02-02",
+    "price_per_share": 93.01,
+    "valuation": 0.87
+  },
+  {
+    "id": 9865,
+    "product_id": 48,
+    "date": "2021-02-09",
+    "price_per_share": 99.3,
+    "valuation": 0.92
+  },
+  {
+    "id": 9866,
+    "product_id": 48,
+    "date": "2021-02-16",
+    "price_per_share": 102.06,
+    "valuation": 0.95
+  },
+  {
+    "id": 9867,
+    "product_id": 48,
+    "date": "2021-02-23",
+    "price_per_share": 98.48,
+    "valuation": 0.92
+  },
+  {
+    "id": 9868,
+    "product_id": 48,
+    "date": "2021-03-02",
+    "price_per_share": 98.26,
+    "valuation": 0.91
+  },
+  {
+    "id": 9869,
+    "product_id": 48,
+    "date": "2021-03-09",
+    "price_per_share": 100.29,
+    "valuation": 0.93
+  },
+  {
+    "id": 9870,
+    "product_id": 48,
+    "date": "2021-03-16",
+    "price_per_share": 103.25,
+    "valuation": 0.96
+  },
+  {
+    "id": 9871,
+    "product_id": 48,
+    "date": "2021-03-23",
+    "price_per_share": 97.09,
+    "valuation": 0.9
+  },
+  {
+    "id": 9872,
+    "product_id": 48,
+    "date": "2021-03-30",
+    "price_per_share": 96.78,
+    "valuation": 0.9
+  },
+  {
+    "id": 9873,
+    "product_id": 48,
+    "date": "2021-04-06",
+    "price_per_share": 98.23,
+    "valuation": 0.91
+  },
+  {
+    "id": 9874,
+    "product_id": 48,
+    "date": "2021-04-13",
+    "price_per_share": 97.73,
+    "valuation": 0.91
+  },
+  {
+    "id": 9875,
+    "product_id": 48,
+    "date": "2021-04-20",
+    "price_per_share": 95.98,
+    "valuation": 0.89
+  },
+  {
+    "id": 9876,
+    "product_id": 48,
+    "date": "2021-04-27",
+    "price_per_share": 101.27,
+    "valuation": 0.94
+  },
+  {
+    "id": 9877,
+    "product_id": 48,
+    "date": "2021-05-04",
+    "price_per_share": 100.94,
+    "valuation": 0.94
+  },
+  {
+    "id": 9878,
+    "product_id": 48,
+    "date": "2021-05-11",
+    "price_per_share": 99.55,
+    "valuation": 0.93
+  },
+  {
+    "id": 9879,
+    "product_id": 48,
+    "date": "2021-05-18",
+    "price_per_share": 100.87,
+    "valuation": 0.94
+  },
+  {
+    "id": 9880,
+    "product_id": 48,
+    "date": "2021-05-25",
+    "price_per_share": 102.42,
+    "valuation": 0.95
+  },
+  {
+    "id": 9881,
+    "product_id": 48,
+    "date": "2021-06-01",
+    "price_per_share": 107.58,
+    "valuation": 1.0
+  },
+  {
+    "id": 9882,
+    "product_id": 48,
+    "date": "2021-06-08",
+    "price_per_share": 108.25,
+    "valuation": 1.01
+  },
+  {
+    "id": 9883,
+    "product_id": 48,
+    "date": "2021-06-15",
+    "price_per_share": 108.84,
+    "valuation": 1.01
+  },
+  {
+    "id": 9884,
+    "product_id": 48,
+    "date": "2021-06-22",
+    "price_per_share": 106.45,
+    "valuation": 0.99
+  },
+  {
+    "id": 9885,
+    "product_id": 48,
+    "date": "2021-06-29",
+    "price_per_share": 106.24,
+    "valuation": 0.99
+  },
+  {
+    "id": 9886,
+    "product_id": 48,
+    "date": "2021-07-06",
+    "price_per_share": 104.77,
+    "valuation": 0.97
+  },
+  {
+    "id": 9887,
+    "product_id": 48,
+    "date": "2021-07-13",
+    "price_per_share": 103.98,
+    "valuation": 0.97
+  },
+  {
+    "id": 9888,
+    "product_id": 48,
+    "date": "2021-07-20",
+    "price_per_share": 609.78,
+    "valuation": 33.0
+  },
+  {
+    "id": 9889,
+    "product_id": 48,
+    "date": "2021-07-27",
+    "price_per_share": 605.91,
+    "valuation": 32.79
+  },
+  {
+    "id": 9890,
+    "product_id": 48,
+    "date": "2021-08-03",
+    "price_per_share": 613.77,
+    "valuation": 33.22
+  },
+  {
+    "id": 9891,
+    "product_id": 48,
+    "date": "2021-08-10",
+    "price_per_share": 623.23,
+    "valuation": 33.73
+  },
+  {
+    "id": 9892,
+    "product_id": 48,
+    "date": "2021-08-17",
+    "price_per_share": 605.75,
+    "valuation": 32.78
+  },
+  {
+    "id": 9893,
+    "product_id": 48,
+    "date": "2021-08-24",
+    "price_per_share": 609.19,
+    "valuation": 32.97
+  },
+  {
+    "id": 9894,
+    "product_id": 48,
+    "date": "2021-08-31",
+    "price_per_share": 620.33,
+    "valuation": 33.57
+  },
+  {
+    "id": 9895,
+    "product_id": 48,
+    "date": "2021-09-07",
+    "price_per_share": 616.98,
+    "valuation": 33.39
+  },
+  {
+    "id": 9896,
+    "product_id": 48,
+    "date": "2021-09-14",
+    "price_per_share": 597.69,
+    "valuation": 32.35
+  },
+  {
+    "id": 9897,
+    "product_id": 48,
+    "date": "2021-09-21",
+    "price_per_share": 588.71,
+    "valuation": 31.86
+  },
+  {
+    "id": 9898,
+    "product_id": 48,
+    "date": "2021-09-28",
+    "price_per_share": 604.85,
+    "valuation": 32.73
+  },
+  {
+    "id": 9899,
+    "product_id": 48,
+    "date": "2021-10-05",
+    "price_per_share": 603.95,
+    "valuation": 32.68
+  },
+  {
+    "id": 9900,
+    "product_id": 48,
+    "date": "2021-10-12",
+    "price_per_share": 615.31,
+    "valuation": 33.3
+  },
+  {
+    "id": 9901,
+    "product_id": 48,
+    "date": "2021-10-19",
+    "price_per_share": 633.71,
+    "valuation": 34.3
+  },
+  {
+    "id": 9902,
+    "product_id": 48,
+    "date": "2021-10-26",
+    "price_per_share": 602.01,
+    "valuation": 32.58
+  },
+  {
+    "id": 9903,
+    "product_id": 48,
+    "date": "2021-11-02",
+    "price_per_share": 610.32,
+    "valuation": 33.03
+  },
+  {
+    "id": 9904,
+    "product_id": 48,
+    "date": "2021-11-09",
+    "price_per_share": 619.05,
+    "valuation": 33.5
+  },
+  {
+    "id": 9905,
+    "product_id": 48,
+    "date": "2021-11-16",
+    "price_per_share": 624.51,
+    "valuation": 33.8
+  },
+  {
+    "id": 9906,
+    "product_id": 48,
+    "date": "2021-11-23",
+    "price_per_share": 603.78,
+    "valuation": 32.68
+  },
+  {
+    "id": 9907,
+    "product_id": 48,
+    "date": "2021-11-30",
+    "price_per_share": 568.47,
+    "valuation": 30.76
+  },
+  {
+    "id": 9908,
+    "product_id": 48,
+    "date": "2021-12-07",
+    "price_per_share": 571.4,
+    "valuation": 30.92
+  },
+  {
+    "id": 9909,
+    "product_id": 48,
+    "date": "2021-12-14",
+    "price_per_share": 550.99,
+    "valuation": 29.82
+  },
+  {
+    "id": 9910,
+    "product_id": 48,
+    "date": "2021-12-21",
+    "price_per_share": 552.21,
+    "valuation": 29.88
+  },
+  {
+    "id": 9911,
+    "product_id": 48,
+    "date": "2021-12-28",
+    "price_per_share": 558.54,
+    "valuation": 30.23
+  },
+  {
+    "id": 9912,
+    "product_id": 48,
+    "date": "2022-01-04",
+    "price_per_share": 563.99,
+    "valuation": 30.52
+  },
+  {
+    "id": 9913,
+    "product_id": 48,
+    "date": "2022-01-11",
+    "price_per_share": 540.99,
+    "valuation": 29.28
+  },
+  {
+    "id": 9914,
+    "product_id": 48,
+    "date": "2022-01-18",
+    "price_per_share": 518.72,
+    "valuation": 28.07
+  },
+  {
+    "id": 9915,
+    "product_id": 48,
+    "date": "2022-01-25",
+    "price_per_share": 494.25,
+    "valuation": 26.75
+  },
+  {
+    "id": 9916,
+    "product_id": 48,
+    "date": "2022-02-01",
+    "price_per_share": 509.59,
+    "valuation": 27.58
+  },
+  {
+    "id": 9917,
+    "product_id": 48,
+    "date": "2022-02-08",
+    "price_per_share": 519.57,
+    "valuation": 28.12
+  },
+  {
+    "id": 9918,
+    "product_id": 48,
+    "date": "2022-02-15",
+    "price_per_share": 531.13,
+    "valuation": 28.74
+  },
+  {
+    "id": 9919,
+    "product_id": 48,
+    "date": "2022-02-22",
+    "price_per_share": 506.52,
+    "valuation": 27.41
+  },
+  {
+    "id": 9920,
+    "product_id": 48,
+    "date": "2022-03-01",
+    "price_per_share": 487.51,
+    "valuation": 26.38
+  },
+  {
+    "id": 9921,
+    "product_id": 48,
+    "date": "2022-03-08",
+    "price_per_share": 459.48,
+    "valuation": 24.87
+  },
+  {
+    "id": 9922,
+    "product_id": 48,
+    "date": "2022-03-15",
+    "price_per_share": 459.77,
+    "valuation": 24.88
+  },
+  {
+    "id": 9923,
+    "product_id": 48,
+    "date": "2022-03-22",
+    "price_per_share": 502.04,
+    "valuation": 27.17
+  },
+  {
+    "id": 9924,
+    "product_id": 48,
+    "date": "2022-03-29",
+    "price_per_share": 510.37,
+    "valuation": 27.62
+  },
+  {
+    "id": 9925,
+    "product_id": 48,
+    "date": "2022-04-05",
+    "price_per_share": 491.94,
+    "valuation": 26.62
+  },
+  {
+    "id": 9926,
+    "product_id": 48,
+    "date": "2022-04-12",
+    "price_per_share": 472.89,
+    "valuation": 25.59
+  },
+  {
+    "id": 9927,
+    "product_id": 48,
+    "date": "2022-04-19",
+    "price_per_share": 487.13,
+    "valuation": 26.36
+  },
+  {
+    "id": 9928,
+    "product_id": 48,
+    "date": "2022-04-26",
+    "price_per_share": 448.38,
+    "valuation": 24.27
+  },
+  {
+    "id": 9929,
+    "product_id": 48,
+    "date": "2022-05-03",
+    "price_per_share": 460.72,
+    "valuation": 24.93
+  },
+  {
+    "id": 9930,
+    "product_id": 48,
+    "date": "2022-05-10",
+    "price_per_share": 412.0,
+    "valuation": 22.3
+  },
+  {
+    "id": 9931,
+    "product_id": 48,
+    "date": "2022-05-17",
+    "price_per_share": 434.39,
+    "valuation": 23.51
+  },
+  {
+    "id": 9932,
+    "product_id": 48,
+    "date": "2022-05-24",
+    "price_per_share": 406.87,
+    "valuation": 22.02
+  },
+  {
+    "id": 9933,
+    "product_id": 48,
+    "date": "2022-05-31",
+    "price_per_share": 436.91,
+    "valuation": 23.64
+  },
+  {
+    "id": 9934,
+    "product_id": 48,
+    "date": "2022-06-07",
+    "price_per_share": 435.49,
+    "valuation": 23.57
+  },
+  {
+    "id": 9935,
+    "product_id": 48,
+    "date": "2022-06-14",
+    "price_per_share": 377.0,
+    "valuation": 20.4
+  },
+  {
+    "id": 9936,
+    "product_id": 48,
+    "date": "2022-06-21",
+    "price_per_share": 372.9,
+    "valuation": 20.18
+  },
+  {
+    "id": 9937,
+    "product_id": 48,
+    "date": "2022-06-28",
+    "price_per_share": 378.86,
+    "valuation": 20.5
+  },
+  {
+    "id": 9938,
+    "product_id": 48,
+    "date": "2022-07-05",
+    "price_per_share": 378.92,
+    "valuation": 20.51
+  },
+  {
+    "id": 9939,
+    "product_id": 48,
+    "date": "2022-07-12",
+    "price_per_share": 375.79,
+    "valuation": 20.34
+  },
+  {
+    "id": 9940,
+    "product_id": 48,
+    "date": "2022-07-19",
+    "price_per_share": 389.67,
+    "valuation": 21.09
+  },
+  {
+    "id": 9941,
+    "product_id": 48,
+    "date": "2022-07-26",
+    "price_per_share": 381.41,
+    "valuation": 20.64
+  },
+  {
+    "id": 9942,
+    "product_id": 48,
+    "date": "2022-08-02",
+    "price_per_share": 385.3,
+    "valuation": 20.85
+  },
+  {
+    "id": 9943,
+    "product_id": 48,
+    "date": "2022-08-09",
+    "price_per_share": 393.16,
+    "valuation": 21.28
+  },
+  {
+    "id": 9944,
+    "product_id": 48,
+    "date": "2022-08-16",
+    "price_per_share": 302.0,
+    "valuation": 16.34
+  },
+  {
+    "id": 9945,
+    "product_id": 48,
+    "date": "2022-08-23",
+    "price_per_share": 282.78,
+    "valuation": 15.3
+  },
+  {
+    "id": 9946,
+    "product_id": 48,
+    "date": "2022-08-30",
+    "price_per_share": 275.0,
+    "valuation": 14.88
+  },
+  {
+    "id": 9947,
+    "product_id": 48,
+    "date": "2022-09-06",
+    "price_per_share": 264.43,
+    "valuation": 14.31
+  },
+  {
+    "id": 9948,
+    "product_id": 48,
+    "date": "2022-09-13",
+    "price_per_share": 266.44,
+    "valuation": 14.42
+  },
+  {
+    "id": 9949,
+    "product_id": 48,
+    "date": "2022-09-20",
+    "price_per_share": 259.93,
+    "valuation": 14.07
+  },
+  {
+    "id": 9950,
+    "product_id": 48,
+    "date": "2022-09-27",
+    "price_per_share": 236.42,
+    "valuation": 12.79
+  },
+  {
+    "id": 9951,
+    "product_id": 48,
+    "date": "2022-10-04",
+    "price_per_share": 253.0,
+    "valuation": 13.69
+  },
+  {
+    "id": 9952,
+    "product_id": 48,
+    "date": "2022-10-11",
+    "price_per_share": 235.7,
+    "valuation": 12.76
+  },
+  {
+    "id": 9953,
+    "product_id": 48,
+    "date": "2022-10-18",
+    "price_per_share": 242.56,
+    "valuation": 13.13
+  },
+  {
+    "id": 9954,
+    "product_id": 48,
+    "date": "2022-10-25",
+    "price_per_share": 247.46,
+    "valuation": 13.39
+  },
+  {
+    "id": 9955,
+    "product_id": 48,
+    "date": "2022-11-01",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9956,
+    "product_id": 48,
+    "date": "2022-11-08",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9957,
+    "product_id": 48,
+    "date": "2022-11-15",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9958,
+    "product_id": 48,
+    "date": "2022-11-22",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9959,
+    "product_id": 48,
+    "date": "2022-11-29",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9960,
+    "product_id": 48,
+    "date": "2022-12-06",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9961,
+    "product_id": 48,
+    "date": "2022-12-13",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9962,
+    "product_id": 48,
+    "date": "2022-12-20",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9963,
+    "product_id": 48,
+    "date": "2022-12-27",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9964,
+    "product_id": 48,
+    "date": "2023-01-03",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9965,
+    "product_id": 48,
+    "date": "2023-01-10",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9966,
+    "product_id": 48,
+    "date": "2023-01-17",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9967,
+    "product_id": 48,
+    "date": "2023-01-24",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9968,
+    "product_id": 48,
+    "date": "2023-01-31",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9969,
+    "product_id": 48,
+    "date": "2023-02-07",
+    "price_per_share": 319.83,
+    "valuation": 17.31
+  },
+  {
+    "id": 9970,
+    "product_id": 48,
+    "date": "2023-02-14",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9971,
+    "product_id": 48,
+    "date": "2023-02-21",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9972,
+    "product_id": 48,
+    "date": "2023-02-28",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9973,
+    "product_id": 48,
+    "date": "2023-03-07",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9974,
+    "product_id": 48,
+    "date": "2023-03-14",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9975,
+    "product_id": 48,
+    "date": "2023-03-21",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9976,
+    "product_id": 48,
+    "date": "2023-03-28",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9977,
+    "product_id": 48,
+    "date": "2023-04-04",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9978,
+    "product_id": 48,
+    "date": "2023-04-11",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9979,
+    "product_id": 48,
+    "date": "2023-04-18",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9980,
+    "product_id": 48,
+    "date": "2023-04-25",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9981,
+    "product_id": 48,
+    "date": "2023-05-02",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9982,
+    "product_id": 48,
+    "date": "2023-05-09",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9983,
+    "product_id": 48,
+    "date": "2023-05-16",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9984,
+    "product_id": 48,
+    "date": "2023-05-23",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9985,
+    "product_id": 48,
+    "date": "2023-05-30",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9986,
+    "product_id": 48,
+    "date": "2023-06-06",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9987,
+    "product_id": 48,
+    "date": "2023-06-13",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9988,
+    "product_id": 48,
+    "date": "2023-06-20",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9989,
+    "product_id": 48,
+    "date": "2023-06-27",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9990,
+    "product_id": 48,
+    "date": "2023-07-04",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9991,
+    "product_id": 48,
+    "date": "2023-07-11",
+    "price_per_share": 317.5,
+    "valuation": 17.19
+  },
+  {
+    "id": 9992,
+    "product_id": 48,
+    "date": "2023-07-18",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9993,
+    "product_id": 48,
+    "date": "2023-07-25",
+    "price_per_share": 317.5,
+    "valuation": 17.18
+  },
+  {
+    "id": 9994,
+    "product_id": 48,
+    "date": "2023-08-01",
+    "price_per_share": 265.28,
+    "valuation": 14.36
+  },
+  {
+    "id": 9995,
+    "product_id": 48,
+    "date": "2023-08-08",
+    "price_per_share": 252.01,
+    "valuation": 13.64
+  },
+  {
+    "id": 9996,
+    "product_id": 48,
+    "date": "2023-08-15",
+    "price_per_share": 228.62,
+    "valuation": 12.37
+  },
+  {
+    "id": 9997,
+    "product_id": 48,
+    "date": "2023-08-22",
+    "price_per_share": 220.51,
+    "valuation": 11.93
+  },
+  {
+    "id": 9998,
+    "product_id": 48,
+    "date": "2023-08-29",
+    "price_per_share": 224.68,
+    "valuation": 12.16
+  },
+  {
+    "id": 9999,
+    "product_id": 48,
+    "date": "2023-09-05",
+    "price_per_share": 220.88,
+    "valuation": 11.95
+  },
+  {
+    "id": 10000,
+    "product_id": 48,
+    "date": "2023-09-12",
+    "price_per_share": 216.33,
+    "valuation": 11.71
+  },
+  {
+    "id": 10001,
+    "product_id": 48,
+    "date": "2023-09-19",
+    "price_per_share": 214.81,
+    "valuation": 11.63
+  },
+  {
+    "id": 10002,
+    "product_id": 48,
+    "date": "2023-09-26",
+    "price_per_share": 210.0,
+    "valuation": 11.36
+  },
+  {
+    "id": 10003,
+    "product_id": 48,
+    "date": "2023-10-03",
+    "price_per_share": 227.5,
+    "valuation": 12.31
+  },
+  {
+    "id": 10004,
+    "product_id": 48,
+    "date": "2023-10-10",
+    "price_per_share": 238.68,
+    "valuation": 12.92
+  },
+  {
+    "id": 10005,
+    "product_id": 48,
+    "date": "2023-10-17",
+    "price_per_share": 238.11,
+    "valuation": 12.89
+  },
+  {
+    "id": 10006,
+    "product_id": 48,
+    "date": "2023-10-24",
+    "price_per_share": 223.92,
+    "valuation": 12.12
+  },
+  {
+    "id": 10007,
+    "product_id": 48,
+    "date": "2023-10-31",
+    "price_per_share": 223.89,
+    "valuation": 12.12
+  },
+  {
+    "id": 10008,
+    "product_id": 48,
+    "date": "2023-11-07",
+    "price_per_share": 236.45,
+    "valuation": 12.8
+  },
+  {
+    "id": 10009,
+    "product_id": 48,
+    "date": "2023-11-14",
+    "price_per_share": 241.95,
+    "valuation": 13.09
+  },
+  {
+    "id": 10010,
+    "product_id": 48,
+    "date": "2023-11-21",
+    "price_per_share": 237.74,
+    "valuation": 12.87
+  },
+  {
+    "id": 10011,
+    "product_id": 48,
+    "date": "2023-11-28",
+    "price_per_share": 238.47,
+    "valuation": 12.91
+  },
+  {
+    "id": 10012,
+    "product_id": 48,
+    "date": "2023-12-05",
+    "price_per_share": 239.28,
+    "valuation": 12.95
+  },
+  {
+    "id": 10013,
+    "product_id": 48,
+    "date": "2023-12-12",
+    "price_per_share": 243.92,
+    "valuation": 13.2
+  },
+  {
+    "id": 10014,
+    "product_id": 48,
+    "date": "2023-12-19",
+    "price_per_share": 261.94,
+    "valuation": 14.18
+  },
+  {
+    "id": 10015,
+    "product_id": 48,
+    "date": "2023-12-26",
+    "price_per_share": 265.97,
+    "valuation": 14.39
+  },
+  {
+    "id": 10016,
+    "product_id": 48,
+    "date": "2024-01-02",
+    "price_per_share": 261.51,
+    "valuation": 14.15
+  },
+  {
+    "id": 10017,
+    "product_id": 48,
+    "date": "2024-01-09",
+    "price_per_share": 254.49,
+    "valuation": 13.77
+  },
+  {
+    "id": 10018,
+    "product_id": 48,
+    "date": "2024-01-16",
+    "price_per_share": 249.84,
+    "valuation": 13.52
+  },
+  {
+    "id": 10019,
+    "product_id": 48,
+    "date": "2024-01-23",
+    "price_per_share": 254.38,
+    "valuation": 13.77
+  },
+  {
+    "id": 10020,
+    "product_id": 48,
+    "date": "2024-01-30",
+    "price_per_share": 243.36,
+    "valuation": 13.17
+  },
+  {
+    "id": 10021,
+    "product_id": 48,
+    "date": "2024-02-06",
+    "price_per_share": 260.41,
+    "valuation": 14.09
+  },
+  {
+    "id": 10022,
+    "product_id": 48,
+    "date": "2024-02-13",
+    "price_per_share": 265.52,
+    "valuation": 14.37
+  },
+  {
+    "id": 10023,
+    "product_id": 48,
+    "date": "2024-02-20",
+    "price_per_share": 272.95,
+    "valuation": 14.77
+  },
+  {
+    "id": 10024,
+    "product_id": 48,
+    "date": "2024-02-27",
+    "price_per_share": 286.26,
+    "valuation": 15.49
+  },
+  {
+    "id": 10025,
+    "product_id": 48,
+    "date": "2024-03-05",
+    "price_per_share": 286.66,
+    "valuation": 15.51
+  },
+  {
+    "id": 10026,
+    "product_id": 48,
+    "date": "2024-03-12",
+    "price_per_share": 298.15,
+    "valuation": 16.14
+  },
+  {
+    "id": 10027,
+    "product_id": 48,
+    "date": "2024-03-19",
+    "price_per_share": 300.0,
+    "valuation": 16.24
+  },
+  {
+    "id": 10028,
+    "product_id": 48,
+    "date": "2024-03-26",
+    "price_per_share": 303.61,
+    "valuation": 16.43
+  },
+  {
+    "id": 10029,
+    "product_id": 48,
+    "date": "2024-04-02",
+    "price_per_share": 300.79,
+    "valuation": 16.28
+  },
+  {
+    "id": 10030,
+    "product_id": 48,
+    "date": "2024-04-09",
+    "price_per_share": 303.99,
+    "valuation": 16.45
+  },
+  {
+    "id": 10031,
+    "product_id": 48,
+    "date": "2024-04-16",
+    "price_per_share": 307.5,
+    "valuation": 16.64
+  },
+  {
+    "id": 10032,
+    "product_id": 48,
+    "date": "2024-04-23",
+    "price_per_share": 333.14,
+    "valuation": 18.03
+  },
+  {
+    "id": 10033,
+    "product_id": 48,
+    "date": "2024-04-30",
+    "price_per_share": 324.82,
+    "valuation": 17.58
+  },
+  {
+    "id": 10034,
+    "product_id": 48,
+    "date": "2024-05-07",
+    "price_per_share": 339.39,
+    "valuation": 18.37
+  },
+  {
+    "id": 10035,
+    "product_id": 48,
+    "date": "2024-05-14",
+    "price_per_share": 358.04,
+    "valuation": 19.38
+  },
+  {
+    "id": 10036,
+    "product_id": 48,
+    "date": "2024-05-21",
+    "price_per_share": 351.44,
+    "valuation": 19.02
+  },
+  {
+    "id": 10037,
+    "product_id": 48,
+    "date": "2024-05-28",
+    "price_per_share": 374.5,
+    "valuation": 20.27
+  },
+  {
+    "id": 10038,
+    "product_id": 48,
+    "date": "2024-06-04",
+    "price_per_share": 368.56,
+    "valuation": 19.95
+  },
+  {
+    "id": 10039,
+    "product_id": 48,
+    "date": "2024-06-11",
+    "price_per_share": 366.0,
+    "valuation": 19.81
+  },
+  {
+    "id": 10040,
+    "product_id": 48,
+    "date": "2024-06-18",
+    "price_per_share": 370.29,
+    "valuation": 20.04
+  },
+  {
+    "id": 10041,
+    "product_id": 48,
+    "date": "2024-06-25",
+    "price_per_share": 366.85,
+    "valuation": 19.85
+  },
+  {
+    "id": 10042,
+    "product_id": 48,
+    "date": "2024-07-02",
+    "price_per_share": 367.13,
+    "valuation": 19.87
+  },
+  {
+    "id": 10043,
+    "product_id": 48,
+    "date": "2024-07-09",
+    "price_per_share": 361.94,
+    "valuation": 19.59
+  },
+  {
+    "id": 10044,
+    "product_id": 48,
+    "date": "2024-07-16",
+    "price_per_share": 400.62,
+    "valuation": 21.68
+  },
+  {
+    "id": 10045,
+    "product_id": 48,
+    "date": "2024-07-23",
+    "price_per_share": 397.57,
+    "valuation": 21.52
+  },
+  {
+    "id": 10046,
+    "product_id": 48,
+    "date": "2024-07-30",
+    "price_per_share": 402.86,
+    "valuation": 21.8
+  },
+  {
+    "id": 10047,
+    "product_id": 48,
+    "date": "2024-08-06",
+    "price_per_share": 385.8,
+    "valuation": 20.88
+  },
+  {
+    "id": 10048,
+    "product_id": 48,
+    "date": "2024-08-13",
+    "price_per_share": 404.71,
+    "valuation": 21.9
+  },
+  {
+    "id": 10049,
+    "product_id": 48,
+    "date": "2024-08-20",
+    "price_per_share": 742.47,
+    "valuation": 6.92
+  },
+  {
+    "id": 10050,
+    "product_id": 48,
+    "date": "2024-08-27",
+    "price_per_share": 752.95,
+    "valuation": 7.02
+  },
+  {
+    "id": 10051,
+    "product_id": 48,
+    "date": "2024-09-03",
+    "price_per_share": 743.2,
+    "valuation": 6.92
+  },
+  {
+    "id": 10052,
+    "product_id": 48,
+    "date": "2024-09-10",
+    "price_per_share": 655.51,
+    "valuation": 6.11
+  },
+  {
+    "id": 10053,
+    "product_id": 48,
+    "date": "2024-09-17",
+    "price_per_share": 670.13,
+    "valuation": 6.24
+  },
+  {
+    "id": 10054,
+    "product_id": 48,
+    "date": "2024-09-24",
+    "price_per_share": 649.19,
+    "valuation": 6.05
+  }
+]

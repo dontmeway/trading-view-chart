@@ -5,8 +5,12 @@ import {
   ColorType,
   type MouseEventParams,
   type Time,
+  IChartApi,
 } from 'lightweight-charts'
 import dayjs from 'dayjs'
+import isoWeek from 'dayjs/plugin/isoWeek'
+
+dayjs.extend(isoWeek)
 
 type Props = {
   data: {
@@ -58,16 +62,18 @@ export const Chart = (props: Props) => {
     price: 0,
     valuation: 0,
   })
-  const first = data[0] ?? {
-    value: 0,
-    valuation: 0,
-    time: '',
-  }
-  const last = data[data.length - 1] ?? {
-    value: 0,
-    valuation: 0,
-    time: '',
-  }
+  const chartApi = useRef<IChartApi | null>(null)
+  // const first = data[0] ?? {
+  //   value: 0,
+  //   valuation: 0,
+  //   time: '',
+  // }
+  // const last = data[data.length - 1] ?? {
+  //   value: 0,
+  //   valuation: 0,
+  //   time: '',
+  // }
+  const billionSuffix = props.lang === 'ru' ? ' млрд' : 'B'
 
   const chartContainerRef = useRef<HTMLDivElement>(null)
 
@@ -127,8 +133,9 @@ export const Chart = (props: Props) => {
           labelBackgroundColor: 'rgba(36, 36, 38, 1)',
         },
       },
+      // handleScroll: false,
+      // handleScale: false,
     })
-    chart.timeScale().fitContent()
 
     const newSeries = chart.addAreaSeries({
       lineColor,
@@ -141,7 +148,22 @@ export const Chart = (props: Props) => {
       crosshairMarkerBackgroundColor: 'rgba(255, 255, 255, 1)',
       crosshairMarkerBorderColor: 'rgba(255, 255, 255, 0.1)',
     })
-    newSeries.setData(data)
+
+    const chartWidth = chartContainerRef.current.clientWidth
+
+    // Get the current bar spacing (applies to area charts too)
+    const barSpacing = chart.timeScale().options().barSpacing
+
+    // Calculate how many points can fit in the chart
+    const pointsThatFit = Math.floor(chartWidth / barSpacing)
+
+    let groupedData = data
+
+    if (pointsThatFit < data.length) {
+      groupedData = groupDataByMonth(data)
+    }
+    newSeries.setData(groupedData)
+    chart.timeScale().fitContent()
 
     window.addEventListener('resize', handleResize)
 
@@ -206,6 +228,8 @@ export const Chart = (props: Props) => {
 
     chart.subscribeCrosshairMove(handleCrosshairMove)
 
+    chartApi.current = chart
+
     return () => {
       window.removeEventListener('resize', handleResize)
       chart.unsubscribeCrosshairMove(handleCrosshairMove)
@@ -223,47 +247,66 @@ export const Chart = (props: Props) => {
   ])
 
   return (
-    <div className="container">
-      <div className="chartInfo">
-        <div className="chartInfoPrice">
-          <p>${Math.round(last.value * 100) / 100}</p>
-          <span
-            style={{
-              color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
-            }}
-          >
-            {Math.round((last.value - first.value) * 100) / 100}
-          </span>
-          <span
-            style={{
-              color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
-            }}
-          >
-            (
-            {Math.round(((last.value - first.value) / first.value) * 10000) /
-              100}
-            %)
-          </span>
-        </div>
-        <span className="chartInfoVolume">${last.valuation}</span>
-      </div>
-      <div className="chartContainer" ref={chartContainerRef} />
-
-      {tooltip && (
-        <div
+    <>
+      <div className="container">
+        {/* <div className="chartInfo">
+      <div className="chartInfoPrice">
+        <p>${Math.round(last.value * 100) / 100}</p>
+        <span
           style={{
-            left: coords.x,
-            top: coords.y,
-            width: toolTipWidth,
-            height: toolTipHeight,
+            color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
           }}
-          className="tooltip"
         >
-          <p>${currentData.price}</p>
-          <p>${currentData.valuation}</p>
-          <span>{currentData.date}</span>
-        </div>
-      )}
-    </div>
+          {Math.round((last.value - first.value) * 100) / 100}
+        </span>
+        <span
+          style={{
+            color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
+          }}
+        >
+          (
+          {Math.round(((last.value - first.value) / first.value) * 10000) /
+            100}
+          %)
+        </span>
+      </div>
+      <span className="chartInfoVolume">${last.valuation}</span>
+    </div> */}
+        <div className="chartContainer" ref={chartContainerRef} />
+
+        {tooltip && (
+          <div
+            style={{
+              left: coords.x,
+              top: coords.y,
+              width: toolTipWidth,
+              height: toolTipHeight,
+            }}
+            className="tooltip"
+          >
+            <p>${currentData.price}</p>
+            <p>
+              ${currentData.valuation}
+              {billionSuffix}
+            </p>
+            <span>{currentData.date}</span>
+          </div>
+        )}
+      </div>
+    </>
   )
+}
+
+function groupDataByMonth(data: Props['data']) {
+  const grouped = data.reduce((acc, next) => {
+    const month = dayjs(next.time).format('YYYY-MM')
+
+    if (!acc[month]) {
+      acc[month] = next
+    }
+
+    return acc
+  }, {} as Record<string, Props['data'][number]>)
+
+  return Object.values(grouped)
 }
