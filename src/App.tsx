@@ -6,7 +6,8 @@ import { useEffect, useMemo, useState } from 'react'
 import ru from 'dayjs/locale/ru'
 import en from 'dayjs/locale/en'
 import dayjs from 'dayjs'
-// import mock from './data.json'
+
+import mock from './data.json'
 
 type DataItem = {
   date: string
@@ -16,7 +17,7 @@ type DataItem = {
 
 function App() {
   const [filter, setFilter] = useState<FilterType>('6m')
-  const [data, setData] = useState<DataItem[]>([])
+  const [data, setData] = useState<DataItem[]>(mock)
   const [isAppReady, setIsAppReady] = useState(false)
   const [lang, setLang] = useState<'ru' | 'en'>('en')
   const handlerName = 'getChartData'

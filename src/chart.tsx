@@ -76,6 +76,35 @@ export const Chart = (props: Props) => {
   const billionSuffix = props.lang === 'ru' ? ' млрд' : 'B'
 
   const chartContainerRef = useRef<HTMLDivElement>(null)
+  const seriesApiRef = useRef<any | null>(null)
+
+  useEffect(() => {
+    const fitContent = () => {
+      if (!chartContainerRef.current) return
+      const chartWidth = chartContainerRef.current?.clientWidth
+
+      if (!chartApi.current) return
+      const barSpacing = chartApi.current.timeScale().options().barSpacing
+
+      // Calculate how many points can fit in the chart
+      const pointsThatFit = Math.floor(chartWidth / barSpacing)
+
+      let groupedData = data
+
+      if (pointsThatFit < data.length) {
+        groupedData = groupDataByMonth(data)
+      }
+
+      seriesApiRef.current?.setData(groupedData)
+      chartApi.current?.timeScale().fitContent()
+    }
+
+    window.addEventListener('chartOpened', fitContent)
+
+    return () => {
+      window.removeEventListener('chartOpened', fitContent)
+    }
+  }, [data])
 
   useEffect(() => {
     data.forEach((item: any) => {
@@ -84,6 +113,19 @@ export const Chart = (props: Props) => {
       })
     })
   }, [data])
+
+  useEffect(() => {
+    const resize = () => {
+      const ev = new CustomEvent('chartOpened')
+      window.dispatchEvent(ev)
+    }
+
+    window.addEventListener('resize', resize)
+
+    return () => {
+      window.removeEventListener('resize', resize)
+    }
+  }, [])
 
   useEffect(() => {
     if (!chartContainerRef.current) return
@@ -133,8 +175,8 @@ export const Chart = (props: Props) => {
           labelBackgroundColor: 'rgba(36, 36, 38, 1)',
         },
       },
-      // handleScroll: false,
-      // handleScale: false,
+      handleScroll: false,
+      handleScale: false,
     })
 
     const newSeries = chart.addAreaSeries({
@@ -164,6 +206,8 @@ export const Chart = (props: Props) => {
     }
     newSeries.setData(groupedData)
     chart.timeScale().fitContent()
+
+    seriesApiRef.current = newSeries
 
     window.addEventListener('resize', handleResize)
 
