@@ -9,6 +9,7 @@ import {
 } from 'lightweight-charts'
 import dayjs from 'dayjs'
 import isoWeek from 'dayjs/plugin/isoWeek'
+import { defaultPalette, Palette } from './palette'
 
 dayjs.extend(isoWeek)
 
@@ -26,6 +27,7 @@ type Props = {
     areaBottomColor?: string
   }
   lang: 'ru' | 'en'
+  palette: Palette
 }
 
 const toolTipWidth = 100
@@ -36,12 +38,13 @@ export const Chart = (props: Props) => {
   const {
     data,
     colors: {
-      backgroundColor = '#151517',
-      lineColor = '#F9FF80',
-      textColor = '#AAAAB2',
-      areaTopColor = 'rgba(249, 255, 128, 0.50)',
-      areaBottomColor = 'rgba(249, 255, 128, 0.005)',
+      backgroundColor = defaultPalette.color_1,
+      lineColor = defaultPalette.color_2,
+      textColor = defaultPalette.color_3,
+      areaTopColor = defaultPalette.color_4,
+      areaBottomColor = defaultPalette.color_5,
     } = {},
+    palette,
   } = props
   const [tooltip, setTooltip] = useState(false)
   const [coords, setCoords] = useState({ x: 0, y: 0 })
@@ -161,18 +164,18 @@ export const Chart = (props: Props) => {
         },
       },
       timeScale: {
-        borderColor: 'rgba(255, 255, 255, 0.15)',
+        borderColor: defaultPalette.color_6,
         ticksVisible: true,
         barSpacing: 4,
         minBarSpacing: 4,
       },
       rightPriceScale: {
-        borderColor: 'rgba(255, 255, 255, 0.15)',
+        borderColor: defaultPalette.color_6,
         ticksVisible: true,
       },
       crosshair: {
         horzLine: {
-          labelBackgroundColor: 'rgba(36, 36, 38, 1)',
+          labelBackgroundColor: defaultPalette.color_7,
         },
       },
       handleScroll: false,
@@ -187,8 +190,8 @@ export const Chart = (props: Props) => {
       priceLineVisible: false,
       lastValueVisible: false,
       crosshairMarkerBorderWidth: 4,
-      crosshairMarkerBackgroundColor: 'rgba(255, 255, 255, 1)',
-      crosshairMarkerBorderColor: 'rgba(255, 255, 255, 0.1)',
+      crosshairMarkerBackgroundColor: defaultPalette.color_8,
+      crosshairMarkerBorderColor: defaultPalette.color_9,
     })
 
     const chartWidth = chartContainerRef.current.clientWidth
@@ -294,32 +297,39 @@ export const Chart = (props: Props) => {
     <>
       <div className="container">
         {/* <div className="chartInfo">
-      <div className="chartInfoPrice">
-        <p>${Math.round(last.value * 100) / 100}</p>
-        <span
-          style={{
-            color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
-          }}
-        >
-          {Math.round((last.value - first.value) * 100) / 100}
-        </span>
-        <span
-          style={{
-            color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
-          }}
-        >
-          (
-          {Math.round(((last.value - first.value) / first.value) * 10000) /
-            100}
-          %)
-        </span>
-      </div>
-      <span className="chartInfoVolume">${last.valuation}</span>
-    </div> */}
+          <div className="chartInfoPrice">
+            <p
+              style={{
+                color: palette.color_8,
+              }}
+            >
+              ${Math.round(last.value * 100) / 100}
+            </p>
+            <span
+              style={{
+                color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
+              }}
+            >
+              {Math.round((last.value - first.value) * 100) / 100}
+            </span>
+            <span
+              style={{
+                color: last.value - first.value > 0 ? '#00D1B2' : '#fc5454',
+              }}
+            >
+              (
+              {Math.round(((last.value - first.value) / first.value) * 10000) /
+                100}
+              %)
+            </span>
+          </div>
+          <span className="chartInfoVolume">${last.valuation}</span>
+        </div> */}
         <div className="chartContainer" ref={chartContainerRef} />
 
         {tooltip && (
           <div
+            key={currentData.date}
             style={{
               left: coords.x,
               top: coords.y,
@@ -328,12 +338,28 @@ export const Chart = (props: Props) => {
             }}
             className="tooltip"
           >
-            <p>${currentData.price}</p>
-            <p>
+            <p
+              style={{
+                color: palette.color_8,
+              }}
+            >
+              ${currentData.price}
+            </p>
+            <p
+              style={{
+                color: palette.color_8,
+              }}
+            >
               ${currentData.valuation}
               {billionSuffix}
             </p>
-            <span>{currentData.date}</span>
+            <span
+              style={{
+                color: palette.color_10,
+              }}
+            >
+              {currentData.date}
+            </span>
           </div>
         )}
       </div>

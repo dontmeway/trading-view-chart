@@ -6,8 +6,9 @@ import { useEffect, useMemo, useState } from 'react'
 import ru from 'dayjs/locale/ru'
 import en from 'dayjs/locale/en'
 import dayjs from 'dayjs'
+import { Palette, defaultPalette } from './palette'
 
-import mock from './data.json'
+// import mock from './data.json'
 
 type DataItem = {
   date: string
@@ -17,10 +18,12 @@ type DataItem = {
 
 function App() {
   const [filter, setFilter] = useState<FilterType>('6m')
-  const [data, setData] = useState<DataItem[]>(mock)
+  const [data, setData] = useState<DataItem[]>([])
+  const [palette, setPalette] = useState<Palette>(defaultPalette)
   const [isAppReady, setIsAppReady] = useState(false)
   const [lang, setLang] = useState<'ru' | 'en'>('en')
   const handlerName = 'getChartData'
+  const paletteHandlerName = 'getPalette'
 
   const mappedData = useMemo(() => {
     const sortedData = sortDataByDate([...data])
@@ -71,10 +74,56 @@ function App() {
       })
   }, [isAppReady])
 
+  useEffect(() => {
+    function receivePalette(incomingData: Palette) {
+      console.log(incomingData)
+      setPalette({ ...defaultPalette, ...incomingData })
+    }
+
+    ;(
+      window as unknown as typeof window & {
+        receivePalette: typeof receivePalette
+      }
+    ).receivePalette = receivePalette
+
+    const flutterInAppWebView = (window as any)?.flutter_inappwebview
+
+    if (flutterInAppWebView?.callHandler === undefined) return
+    flutterInAppWebView
+      ?.callHandler(paletteHandlerName)
+      .then((result: { palette: Palette }) => {
+        receivePalette(result.palette)
+      })
+  }, [isAppReady])
+
+  useEffect(() => {
+    const body = document.querySelector('body')
+    if (!body) return
+
+    body.style.backgroundColor = palette.color_1
+  }, [palette.color_1])
+
   return (
     <>
-      <Chart key={filter} lang={lang} data={mappedData} />
-      <Filter lang={lang} value={filter} onChange={(type) => setFilter(type)} />
+      <Chart
+        key={filter}
+        lang={lang}
+        data={mappedData}
+        palette={palette}
+        colors={{
+          backgroundColor: palette.color_1,
+          lineColor: palette.color_2,
+          textColor: palette.color_3,
+          areaTopColor: palette.color_4,
+          areaBottomColor: palette.color_5,
+        }}
+      />
+      <Filter
+        lang={lang}
+        palette={palette}
+        value={filter}
+        onChange={(type) => setFilter(type)}
+      />
     </>
   )
 }

@@ -1,9 +1,12 @@
+import { Palette } from './palette'
+
 export type FilterType = '3m' | '6m' | '1y' | 'max'
 
 type Props = {
   value: FilterType
   onChange: (value: FilterType) => void
   lang: 'ru' | 'en'
+  palette: Palette
 }
 
 const langs: Record<'ru' | 'en', Record<FilterType, string>> = {
@@ -29,6 +32,14 @@ export const Filter = (props: Props) => {
       {filters.map((filter) => (
         <button
           key={filter}
+          style={{
+            color:
+              props.value === filter
+                ? props.palette.color_8
+                : props.palette.color_10,
+            borderColor:
+              props.value === filter ? props.palette.color_11 : undefined,
+          }}
           className={(props.value === filter ? 'active ' : '') + 'filterButton'}
           onClick={() => props.onChange(filter)}
         >
